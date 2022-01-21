@@ -8,7 +8,6 @@ nnoremap <leader>n :NERDTreeToggle<CR>
 nnoremap <C-p> :GFiles<Cr>
 nnoremap <silent> <Leader>f :Ag<CR>
 let g:fzf_layout = { 'down':  '40%'}
-set clipboard=unnamedplus
 set number
 command! -bang -nargs=* Ag call fzf#vim#ag(<q-args>, fzf#vim#with_preview({'options': '--delimiter : --nth 4..'}), <bang>0)
 nnoremap <leader>g :Ack<Space>
@@ -35,12 +34,17 @@ let g:lightline = {
     \   'buffers': 'tabsel'
     \ }
     \ }
-let g:loaded_clipboard_provider = 1
-let s:clip = '/mnt/c/Windows/System32/clip.exe'
-if executable(s:clip)
-  augroup WSLYank
-  autocmd!
-    autocmd TextYankPost * if v:event.operator ==# 'y' | call system(s:clip, @0) | endif
-  augroup END
-endif
 
+if has('macunix')
+  set clipboard+=unnamedplus
+else
+  let g:loaded_clipboard_provider = 1
+  set clipboard=unnamedplus
+  let s:clip = '/mnt/c/Windows/System32/clip.exe'
+  if executable(s:clip)
+    augroup WSLYank
+    autocmd!
+      autocmd TextYankPost * if v:event.operator ==# 'y' | call system(s:clip, @0) | endif
+    augroup END
+  endif
+endif
