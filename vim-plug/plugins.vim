@@ -23,4 +23,5 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'itchyny/lightline.vim'
     Plug 'mengelbrecht/lightline-bufferline'
     Plug 'tpope/vim-sleuth'
+    Plug 'tpope/vim-fugitive'
 call plug#end()
