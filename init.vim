@@ -1,7 +1,10 @@
 source $HOME/.config/nvim/vim-plug/plugins.vim
 let mapleader = ","
+nnoremap <leader>s :update<cr>
+inoremap <leader>s <Esc>:update<cr>gi
+
 nnoremap gn :bn<CR>
-nnoremap gp :bp<CR>
+nnoremap gb :bp<CR>
 nnoremap gd :bd<CR>
 set whichwrap=<,>,h,l
 nnoremap <leader>n :NERDTreeToggle<CR>
