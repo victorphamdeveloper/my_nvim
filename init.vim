@@ -10,6 +10,7 @@ set whichwrap=<,>,h,l
 nnoremap <leader>n :NERDTreeToggle<CR>
 nnoremap <C-p> :GFiles<Cr>
 nnoremap <silent> <Leader>f :Ag<CR>
+autocmd BufWritePre * :%s/\s\+$//e
 let g:fzf_layout = { 'down':  '40%'}
 set number
 command! -bang -nargs=* Ag call fzf#vim#ag(<q-args>, fzf#vim#with_preview({'options': '--delimiter : --nth 4..'}), <bang>0)
