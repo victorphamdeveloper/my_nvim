@@ -6,7 +6,8 @@ inoremap <leader>s <Esc>:update<cr>gi
 nnoremap gn :bn<CR>
 nnoremap gb :bp<CR>
 nnoremap gd :bd<CR>
-set whichwrap=<,>,h,l
+set whichwrap+=<,>,h,l,[,]
+
 nnoremap <leader>n :NERDTreeToggle<CR>
 nnoremap <C-p> :GFiles<Cr>
 nnoremap <silent> <Leader>f :Ag<CR>
@@ -26,6 +27,8 @@ nnoremap <silent> <Leader>H :Helptags<CR>
 nnoremap <silent> <Leader>h :History<CR>
 nnoremap <silent> <Leader>h: :History:<CR>
 nnoremap <silent> <Leader>h/ :History/<CR>
+
+nnoremap <silent> <Leader>o :ZoomWinTabToggle<CR>
 
 if executable('ag')
   let g:ackprg = 'ag --vimgrep'
@@ -64,3 +67,5 @@ else
     augroup END
   endif
 endif
+
+let NERDTreeWinSize = 50

@@ -16,7 +16,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'jiangmiao/auto-pairs'
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
-    Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} 
+    Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
     Plug 'mileszs/ack.vim'
     Plug 'mengelbrecht/lightline-bufferline'
     Plug 'ryanoasis/vim-devicons'
@@ -24,4 +24,5 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'mengelbrecht/lightline-bufferline'
     Plug 'tpope/vim-sleuth'
     Plug 'tpope/vim-fugitive'
+    Plug 'troydm/zoomwintab.vim'
 call plug#end()
