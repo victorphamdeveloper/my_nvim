@@ -14,15 +14,16 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'scrooloose/NERDTree'
     " Auto pairs for '(' '[' '{'
     Plug 'jiangmiao/auto-pairs'
-    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-    Plug 'junegunn/fzf.vim'
     Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
     Plug 'mileszs/ack.vim'
     Plug 'mengelbrecht/lightline-bufferline'
-    Plug 'ryanoasis/vim-devicons'
     Plug 'itchyny/lightline.vim'
     Plug 'mengelbrecht/lightline-bufferline'
     Plug 'tpope/vim-sleuth'
     Plug 'tpope/vim-fugitive'
     Plug 'troydm/zoomwintab.vim'
+    Plug 'nvim-lua/plenary.nvim'
+    Plug 'nvim-telescope/telescope.nvim'
+    Plug 'ryanoasis/vim-devicons'
+    Plug 'tpope/vim-commentary'
 call plug#end()
