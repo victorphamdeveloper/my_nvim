@@ -18,7 +18,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'mileszs/ack.vim'
     Plug 'mengelbrecht/lightline-bufferline'
     Plug 'itchyny/lightline.vim'
-    Plug 'mengelbrecht/lightline-bufferline'
     Plug 'tpope/vim-sleuth'
     Plug 'tpope/vim-fugitive'
     Plug 'troydm/zoomwintab.vim'
