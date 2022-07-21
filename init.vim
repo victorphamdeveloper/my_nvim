@@ -76,5 +76,11 @@ let NERDTreeWinSize = 35
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 nnoremap <Leader>f <cmd>lua require'telescope.builtin'.live_grep(require('telescope.themes').get_ivy({}))<cr>
-nnoremap <silent> <C-f> <cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_ivy({}))<cr>
-
+nnoremap <silent> <C-f> <cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({}))<cr>
+lua <<EOF
+require('telescope').setup{
+	defaults = {
+		path_display={"smart"}
+	}
+}
+EOF
