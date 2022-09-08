@@ -25,4 +25,5 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'nvim-telescope/telescope.nvim'
     Plug 'ryanoasis/vim-devicons'
     Plug 'tpope/vim-commentary'
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()

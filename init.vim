@@ -84,5 +84,7 @@ require('telescope').setup{
 	}
 }
 EOF
+
 hi IncSearch cterm=NONE ctermfg=yellow ctermbg=red
 
+source $HOME/.config/nvim/coc.vim
