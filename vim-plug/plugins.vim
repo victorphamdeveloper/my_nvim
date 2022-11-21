@@ -14,7 +14,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'scrooloose/NERDTree'
     " Auto pairs for '(' '[' '{'
     Plug 'jiangmiao/auto-pairs'
-    Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
     Plug 'mileszs/ack.vim'
     Plug 'mengelbrecht/lightline-bufferline'
     Plug 'itchyny/lightline.vim'
