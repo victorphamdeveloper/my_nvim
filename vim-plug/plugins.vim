@@ -21,8 +21,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'tpope/vim-fugitive'
     Plug 'troydm/zoomwintab.vim'
     Plug 'nvim-lua/plenary.nvim'
-    Plug 'nvim-telescope/telescope.nvim'
+    Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.2' }
     Plug 'ryanoasis/vim-devicons'
     Plug 'tpope/vim-commentary'
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    Plug 'airblade/vim-gitgutter'
+    Plug 'tpope/vim-surround'
 call plug#end()
